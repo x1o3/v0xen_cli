@@ -17,7 +17,7 @@ positional arguments:
     extract        Extract a secret image from a stego image
 ```
   
-### Subcommand `embed`:  
+### `embed`:  
 ```sh
 usage: v0xen.py embed [-h] -c COVER -s SECRET -o OUTPUT [-k KEY] [--rgb]
 
@@ -30,7 +30,7 @@ options:
   --rgb, --color       Process images in RGB mode (default is grayscale)
 ```
     
-### Subcommand `extract`:  
+### `extract`:  
 ```sh
  usage: v0xen.py extract [-h] -s STEGO -o OUTPUT [-k KEY]  
   
@@ -41,7 +41,7 @@ options:
   -k, --key KEY        Secret Key used to embed secret image  
 ```
   
-Example : python v0xen.py extract -s ./rgb.png -o ./out.png -k nyx  
+Example : `python v0xen.py extract -s ./rgb.png -o ./out.png -k nyx`  
   
 This repo includes an `Images/` directory with a few example cover, secret, and stego images.      
 These images are provided for demonstration purposes only.   
