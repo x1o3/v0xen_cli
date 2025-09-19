@@ -19,7 +19,7 @@ positional arguments:
     extract        Extract a secret image from a stego image
 ```
   
-### `embed`:  
+### embed:  
 ```sh
 usage: v0xen.py embed [-h] -c COVER -s SECRET -o OUTPUT [-k KEY] [--rgb]
 
@@ -32,7 +32,7 @@ options:
   --rgb, --color       Process images in RGB mode (default is grayscale)
 ```
     
-### `extract`:  
+### extract:  
 ```sh
  usage: v0xen.py extract [-h] -s STEGO -o OUTPUT [-k KEY]  
   
