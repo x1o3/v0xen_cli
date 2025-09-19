@@ -47,3 +47,9 @@ Example : `python v0xen.py extract -s ./rgb.png -o ./out.png -k nyx`
   
 This repo includes an `Images/` directory with a few example cover, secret, and stego images.      
 These images are provided for demonstration purposes only.   
+ 
+```sh
+nix-shell             ### for bash
+nix-shell --run fish  ### for fish
+```   
+For nix-shell environment, exists a shell.nix which can be enabled using the command above.  
