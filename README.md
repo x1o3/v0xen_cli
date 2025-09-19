@@ -1,6 +1,6 @@
 # V0XEN    
    
-Python tool for a steganography technique using LSB and music frequencies in grayscale.   
+Python tool for a steganography technique using LSB and music frequencies.   
 - **Payload**: resizess to 0.25 of the cover image  
 - **PSNR**: 47+    
 - **SSIM**: 0.99+    
