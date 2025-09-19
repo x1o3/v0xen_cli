@@ -6,6 +6,8 @@ Python tool for a steganography technique using LSB and music frequencies.
 - **SSIM**: 0.99+    
 - **BER**: >0.065    
 
+PSNR, SSIM, BER tested over 7k+ images with key="s9On31havc13".   
+
 ### Usage
 
 ```sh
