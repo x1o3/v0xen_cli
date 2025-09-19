@@ -21,9 +21,10 @@ def resize_secret(secret_path, cover_width, use_rgb=False):
     img = Image.open(secret_path).convert("RGB" if use_rgb else "L")
     aspect_ratio = img.height / img.width
     new_width = cover_width // 2
-    new_height = int(new_width * aspect_ratio)
-    resized = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
-    arr = np.array(resized)
+    if img.width > new_width: 
+        new_height = int(new_width * aspect_ratio)
+        img = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
+    arr = np.array(img)
     if arr.ndim == 2:
         arr = np.expand_dims(arr, axis=-1)
     return arr
